@@ -7,7 +7,7 @@ module.exports = {
 
   // Database configuration
   database: {
-    url: process.env.MONGODB_URI || "mongodb://localhost:27017/employeeDB",
+    url: process.env.MONGODB_URI || "mongodb+srv://suryaarasu543_db_user:<WruV9MvE4hWjV26x>@cluster0.j4w8yns.mongodb.net/?appName=Cluster0",
     options: {
       useNewUrlParser: true,
       useUnifiedTopology: true,
