@@ -1,5 +1,6 @@
-const express = require("express");
-const dotenv = require("dotenv");
+require('dotenv').config(); // Idhu dhaan .env file or Render variables-ah load pannum
+const express = require('express');
+// ... mattha code ...
 const cors = require("cors");
 const connectDB = require("./Config/db"); 
 const app = require("./app"); // Inga 'import' badhula 'require' maathiruken
