@@ -1,7 +1,7 @@
 const express = require("express");
 const dotenv = require("dotenv");
 const cors = require("cors");
-const connectDB = require("./config/db"); 
+const connectDB = require("./Config/db"); 
 const app = require("./app"); // Inga 'import' badhula 'require' maathiruken
 
 // Config env
