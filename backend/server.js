@@ -2,29 +2,20 @@ const express = require("express");
 const dotenv = require("dotenv");
 const cors = require("cors");
 const connectDB = require("./Config/db");
+const app = require("./app"); // Indha line dhaan unga app.js-la irukura routes-ah kondu varum
 
-// Load Environment variables
+// 1. Env variables load pannanum
 dotenv.config();
 
-// Connect Database
+// 2. Database connect pannanum
 connectDB();
 
-const app = express();
-
-// Middlewares
-app.use(express.json());
-app.use(cors());
-
-// Basic Route for testing
-app.get("/", (req, res) => {
-  res.send("API is running...");
-});
-
-// Port Setting
+// 3. Port settings
 const PORT = process.env.PORT || 5000;
 
+// 4. Start Server (app.js use panni)
 const server = app.listen(PORT, () => {
-  console.log(`Server running in ${process.env.NODE_ENV || 'development'} mode on port ${PORT}`);
+  console.log(`Server running on port ${PORT}`);
 });
 
 // Handle unhandled promise rejections
