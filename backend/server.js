@@ -1,4 +1,5 @@
-require('dotenv').config(); // Idhu dhaan .env file or Render variables-ah load pannum
+// Idhai top-la add pannunga
+const dotenv = require('dotenv');  
 const express = require('express');
 // ... mattha code ...
 const cors = require("cors");
