@@ -3,4 +3,4 @@
 // export const BASE_URL = "https://wavetrack.onrender.com/api/v1";
 // export const BASE_URL = "https://wavetrack-service.onrender.com/api/v1";
 // eslint-disable-next-line no-undef
-VITE_API_URL="https://wavetrack-5951.onrender.com/api/v1";
+VITE_API_URL="https://wavetrack-1.onrender.com/api/v1/auth/login";
