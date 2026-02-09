@@ -52,14 +52,14 @@ app.use(helmet());
 // Sanitize data
 // app.use(mongoSanitize());
 
-// Mount routers
+
 app.use("/api/v1/auth", authRoutes);
 app.use("/api/v1/employees", employeeRoutes);
 app.use("/api/v1/subscribers", subscriberRoutes);
 app.use("/api/v1/payments", paymentRoutes);
 app.use("/api/v1/tickets", ticketRoutes);
 app.use("/api/v1/automate", automateRoutes);
-// app.use("/api/v1/audit-logs", auditRoutes);
+app.use("/api/v1/audit-logs", auditRoutes);
 
 // Error handler middleware
 app.use(errorHandler);
